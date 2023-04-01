@@ -27,7 +27,7 @@ def good():
 	signal.signal(signal.SIGINT, gr_exit)
 	global all_processes
 	for a in range(17):
-		full_command1 = '../../debug/.venv/bin/debin'
+		full_command1 = '~/debug/.venv/bin/debin'
 		child_process1 = subprocess.Popen(full_command1, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 		all_processes.append(child_process1)
 
@@ -39,7 +39,7 @@ def good():
 def foo():
 	signal.signal(signal.SIGINT, gr_exit)
 	global all_processes
-	bs = '../../debug/.venv/bin/'
+	bs = '/root/test_env/bin/'
 	cms = [f'{bs}debin', f'{bs}exit_code', f'{bs}make_exception']
 
 	for cc in cms:

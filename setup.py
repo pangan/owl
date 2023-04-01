@@ -5,7 +5,7 @@ setup(
  name = "owl",
  version = "0.0.1",
  entry_points={
-     'console_scripts': ['owl = src.main:foo',]
+     'console_scripts': ['owl = owl.main:foo',]
  },
- packages = ['src']
+ packages = ['owl']
 )
